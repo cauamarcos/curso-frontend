@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    color: #d10303;
+}
+
+/* Header */
+
+header {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem
+}
+
+/* Main */
+
+#container {
+    display: flex;
+    gap: 3rem;
+    padding: 20px 5%;
+}
+
+main {
+    flex: 3 1 0;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post p {
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.title,
+.description,   
+.author {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.author {
+    font-weight: bold;
+    color: #333;
+}
+
+aside {
+    flex: 1 1 0;
+}
+
+#search-box,
+#related,
+#tags {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+#search-bar form {
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+#search-bar input[type="submit"] {
+    background-color: #d10303;
+    color: white;
+    border: none;
+}
+
+#search-bar input[type="submit"]:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+#related li {
+    margin-bottom: 1rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #333;
+    color: #fafafa;
+    padding: 0.5rem 0.7rem;
+}
+
+#tags-container a:hover {
+    color: #d10303;
+}
+
+footer {
+    border-top: 2px solid #ddd;
+    padding: 20px 5%;
+    text-align: center;
+    color: #333;
+}
+
+footer #final-message {
+    margin-bottom: 1rem;
+}
+
+/* Responsivo */
+
+@media (max-width: 450px) {
+
+    header li {
+        font-size: 0.8rem;
+    }
+
+    #container {
+        flex-wrap: wrap;
+    }
+
+}

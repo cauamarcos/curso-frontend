@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS interno -->
+    <style>
+        h1 {
+            color: blue;
+        }
+        h3 {
+            color: aqua;
+        }
+    </style>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Como o link para o arquivo externo de css foi carregado depois do css interno, ele irá
+     se sobrepor ao css interno. Se esse link estivesse acima, o css interno seria priorizado -->
+     <link rel="stylesheet" href="css/lists.css">
+     <!-- Do mesmo modo, um link de css que for importado por último, irá se sobrepor aos demais -->
+      <link rel="stylesheet" href="css/titles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Exemplo de css inline -->
+     <!-- O css inline se sobrepõe ao outros -->
+    <h1 style="color: red; font-size: 40px;">Título</h1>
+
+    <!-- Exemplo de css interno -->
+    <h1>Título 2</h1>
+    <h3>Subtítulo</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h4>Tarefa 2</h4>
+
+    <div id="sticky">Elemento sticky</div>
+
+    <!-- Usando classes -->
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam velit perferendis aliquam? Ipsa eveniet eos quas illum doloremque distinctio eum dolor harum corrupti laboriosam mollitia minus, rem, veniam eligendi modi dicta fugit amet officiis recusandae quaerat? Repellat rem sapiente minima ducimus? Facere, eaque. Non optio ut eos iure adipisci!</p>
+
+    <!-- Usando ID --> <!-- O id se sobrepõe à classe, que se sobrepõe aos estilos de tag-->
+    <h1 id="exclusive-title">Título com id</h1>
+
+    <!-- Usando imagem de fundo -->
+    <div class="bg-img"></div>
+
+    <!-- Usando border-box -->
+     <div class="border-box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, repudiandae. Esse rem minima natus officiis neque illum, ullam obcaecati est qui magni eligendi pariatur optio blanditiis explicabo voluptatibus id incidunt!</p>
+     </div>
+
+     <div id="desafio3">
+        <h2 class="texto">Texto</h2>
+     </div>
+
+     <!-- Alinhando texto e decorando texto -->
+      <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla recusandae hic provident minima quasi veritatis, culpa aliquid, quidem ea nobis totam necessitatibus fugiat aliquam facilis aut, minus eligendi debitis dolorum! Alias dolor minus dolore quibusdam vel rem, nemo corrupti dolores autem rerum sunt temporibus voluptatum corporis laborum itaque reiciendis reprehenderit?</p>
+
+      <!-- Display -->
+       <div class="inline">a</div>
+       <div class="inline">b</div>
+       <div class="inline">c</div>
+       <span id="span-block">Texto</span>
+
+       <!-- Usando z-index -->
+       <div id="container">
+        <div class="absolute1"></div>
+        <div class="absolute2"></div>
+        <div class="absolute3"></div>
+       </div>
+</body>
+</html>

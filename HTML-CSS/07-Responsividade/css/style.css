@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1 {
+    color: red;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* Padrão de breakpoints
+
+600px pra baixo: celulares
+768px até 600px: tablets
+992px até 768px: mini laptops
+992px pra cima: laptops e desktop */
+
+h2 {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h2 {
+        display: block;
+    }
+}

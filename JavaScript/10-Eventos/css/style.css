@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    margin-bottom: 1000px;
+}
+
+#btn-container {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+}

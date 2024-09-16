@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Formulários HTML</h1>
+
+    <form action="analise.php" method="get">
+        <fieldset>
+            <legend>Preencha os seus dados</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required>
+
+            <label for="idade">Idade</label>
+            <input type="number" name="idade">
+
+            <label for="nasc">Data de nascimento</label>
+            <input type="date" name="nasc">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail">
+
+            <label for="foto">Foto de perfil</label>
+            <input type="file" name="foto" disabled>
+        </fieldset>
+
+        <label for="emprego">Selecione sua profissão:</label>
+        <select name="emprego">
+            <option value="programador">Programador</option>
+            <option value="cozinheiro" selected>Fisiculturista</option>
+        </select>
+
+        <label for="itens">Selecione os itens desejados</label>
+        <div class="radio">
+            <div>
+                <input type="checkbox" value="creatina" name="itens[]">
+                <label for="creatina">Creatina</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="pre" name="itens[]">
+                <label for="pre">Pré-treino</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="whey" name="itens[]">
+                <label for="whey">Whey Protein</label>
+            </div>
+            <div>
+                <input type="checkbox" value="bcaa" name="itens[]">
+                <label for="bcaa">BCAA</label>
+            </div>
+        </div>
+
+        <label for="sabor">Escolha o sabor:</label>
+        <input type="text" name="sabor" list="sabores" value="Natural">
+        <datalist id="sabores">
+            <option value="Chocolate"></option>
+            <option value="Morango"></option>
+            <option value="Baunilha"></option>
+            <option value="Cookies & Cream"></option>
+        </datalist>
+
+        <label for="comentario">Escreva sua opinião sobre nosso site</label>
+        <textarea name="comentario"></textarea>
+
+        <label for="senha">Digite sua senha:</label>
+        <input type="password" name="senha">
+        
+        <label for="marca">Selecione a marca</label>
+        <div class="radio">
+            <div>
+                <input type="radio" value="max" name="marca">
+                <label for="max">Max Titanium</label>
+            </div>
+
+            <div>
+                <input type="radio" value="growth" name="marca">
+                <label for="growth">Growth</label>
+            </div>
+
+            <div>
+                <input type="radio" value="integral" name="marca">
+                <label for="integral">Integralmedica</label>
+            </div>
+        </div>
+        
+        <div id="fim">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

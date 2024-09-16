@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* Containers */
+
+main {
+    display: flex;
+    margin-top: 15px;
+}
+
+#banner-container,
+#form-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container {
+    text-align: right;
+}
+
+#banner-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-container {
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Formulário de login */
+
+#login-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-ig {
+    width: 50%;
+    margin: 50px auto 10px;
+}
+
+#login-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input {
+    width: 70%;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#login-form input[type="submit"] {
+    margin: 10px auto;
+    background-color: rgb(0, 149, 246);
+    opacity: .7;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+/* Separador */
+
+#separator {
+    position: relative;
+}
+
+#line {
+    border-top: 1px solid #dbdbdb;
+    width: 70%;
+    margin: 10px auto 30px;
+}
+
+#separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #858585;
+    top: -6px;
+    background-color: white;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Facebook Login */
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-logo {
+    width: 16px;
+    margin-right: 8px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #373799;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forgot-pass {
+    margin-bottom: 20px;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: rgba(0, 0, 146, 0.733);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Registro */
+
+#register-box {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#register-box p {
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+}
+
+#register-box a {
+    text-decoration: none;
+    color: rgba(0, 148, 246, 0.9);
+    font-weight: bold;
+}
+
+/* Obtenha o app */
+
+#get-app-container {
+    width: 350px;
+}
+
+#get-app-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#get-app-container a {
+    text-decoration: none;
+}
+
+.store-btn {
+    width: 35%;
+}
+
+/* Footer */
+
+footer {
+    width: 90%;
+    margin: 50px auto;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+footer a,
+footer p {
+    text-decoration: none;
+    color: #858585;
+    font-size: small;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Mobile */
+
+@media(max-width: 450px) {
+
+    body {
+        background-color: white;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #main,
+    #login-box {
+        margin-top: 0;
+    }
+
+    #logo-ig {
+        margin-top: 20px;
+    }
+
+    #form-container,
+    #login-box,
+    #register-box,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+}

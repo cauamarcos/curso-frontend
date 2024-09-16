@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu suplemento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastre seu suplemento para venda</h1>
+    </header>
+    <main>
+        <form>
+            <div id="titulo">
+                <h2>Formulário</h2>
+            </div>
+            <hr>
+            <h3>Preencha os dados abaixo</h3>
+
+            <label for="title">Título do anúncio: <span class="asterisco">*</span></label>
+            <input type="text" name="title" id="title" placeholder="Digite o título do anúncio" maxlength="30" required>
+            
+            <label for="price">Preço: <span class="asterisco">*</span></label>
+            <input type="text" name="price" id="price" placeholder="Digite o preço do produto" required>
+            
+            <label for="description">Descrição: <span class="asterisco">*</span></label>
+            <textarea name="description" id="description" placeholder="Descreva o produto" maxlength="400" required></textarea>
+
+            <label for="wheight">Peso (em gramas): <span class="asterisco">*</span></label>
+            <input type="number" name="wheight" id="wheight" placeholder="Digite o peso do produto" required>
+            
+            <label for="marca">Selecione a marca: <span class="asterisco">*</span></label>
+            <div class="radio">
+
+                <div>
+                    <input type="radio" value="growth" name="marca">
+                    <label for="growth">Growth</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="integral" name="marca">
+                    <label for="integral">Integralmedica</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="max" name="marca">
+                    <label for="max">Max Titanium</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="probiotica" name="marca">
+                    <label for="probiotica">Probiotica</label>
+                </div>
+            </div>
+
+            <label for="fab">Data de validade: <span class="asterisco">*</span></label>
+            <input type="date" name="fab" id="fab" required>
+
+            <label for="images">Insira uma foto do produto: <span class="asterisco">*</span></label>
+            <input type="file" multiple accept="image/png, image/jpg" name="images" id="images" required>
+
+            <div id="fim">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Criado por Cauã Marcos</p>
+    </footer>
+</body>
+</html>

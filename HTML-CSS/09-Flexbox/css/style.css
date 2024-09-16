@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.flex {
+    display: flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    /* O valor padrão de flex-direction é row */
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    /* o wrap serve para que a flexbox respeite uma "quebra de linha" desejada */
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+.justify-content,
+.align-items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.justify-content .box,
+.align-items .box {
+    width: 50px;
+}
+
+#center {
+    justify-content: center;
+}
+#space-around {
+    justify-content: space-around;
+}
+#space-between {
+    justify-content: space-between;
+}
+#end {
+    justify-content: end;
+}
+
+/* Com justify-content modificamos os elementos na horizontal */
+/* Com align-items modificamos os elementos na vertical */
+
+.align-items {
+    border: 1px solid blue;
+    height: 200px;
+}
+
+#align-center {
+    align-items: center;
+}
+#flex-end {
+    align-items: flex-end;
+}
+#stretch .box {
+    height: auto;
+}
+#stretch {
+    align-items: stretch;
+}
+
+#gap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#gap .box {
+    width: 32%;
+}
+
+#order {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#one {
+    order: 1;
+}
+#two {
+    order: 2;
+}
+#three {
+    order: 3;
+}
+
+#order .box {
+    flex: 1;
+}
+#order #two {
+    flex-grow: 2;
+}
+
+#basis {
+    display: flex;
+}
+#basis .box {
+    flex-basis: 20px;
+}
+#maior {
+    flex-grow: 1;
+}
+
+#shrink {
+    display: flex;
+}
+#menor {
+    flex-shrink: 2;
+}
+#shrink .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+#shrink #menor {
+    flex-shrink: 2;
+}
+
+/* Flex shorthand */
+/* flex: (grow) (shrink) (basis) */
+
+#auto-alignment {
+    height: 300px;
+    border: 1px solid purple;
+    display: flex;
+    align-items: end;
+}
+
+#auto-alignment .different {
+    align-self: center;
+}

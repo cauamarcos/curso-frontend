@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+
+nav {
+    background-image: linear-gradient(rgb(34, 34, 34), rgb(17, 17, 17), black);
+    padding: 20px;
+    position: relative;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu {
+    position: absolute;
+    right: 30px;
+    height: 50px;
+    display: inline-block;
+}
+
+#menu a {
+    display: inline-block;
+    margin-left: 25px;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: red;
+}
+
+.banner {
+    width: 100%;
+    max-height: 400px;
+    background-color: black;
+}
+
+#beneficios {
+    background-color: black;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#beneficios h2 {
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+
+#beneficios ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#beneficios li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    color: red;
+}
+
+#beneficios h3 {
+    margin: 1rem 0;
+}
+
+#beneficios p {
+    line-height: 25px;
+}
+
+#planos {
+    text-align: center;
+    background-image: linear-gradient(black, rgb(10, 10, 10), rgb(20, 20, 20));
+    padding-bottom: 5rem;
+}
+
+#planos h2,
+#suporte h2 {
+    font-size: 2rem;
+}
+
+#planos p,
+#suporte p {
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+#planos-detalhes {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#planos-detalhes li {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+.plano,
+.plano-recomendado {
+    flex: 1;
+    max-width: 275px;
+    border: 1px solid gray;
+    margin: 0px 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.plano:hover,
+.plano-recomendado:hover {
+    box-shadow: 2px 2px 2px white;
+    cursor: pointer;
+}
+
+.plano .nome,
+.plano-recomendado .nome {
+    background-image: linear-gradient(blue, rgb(68, 0, 255), rgb(87, 0, 128));
+    border-radius: 20px;
+    margin: 0px 20px;
+    font-weight: 600;
+}
+
+.plano-recomendado .nome {
+    background-image: linear-gradient(blue, rgb(68, 0, 255), rgb(87, 0, 128), rgb(128, 0, 122), rgb(189, 2, 80));
+}
+
+#suporte {
+    background-image: linear-gradient( rgb(20, 20, 20), rgb(30, 30, 30), rgb(40, 40, 40));
+    text-align: center;
+}
+
+#suporte input,
+#suporte textarea {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin: 1rem auto;
+    background-color: rgb(19, 18, 18);
+    border: 1px solid gray;
+}
+
+#suporte textarea {
+    width: 400px;
+    height: 100px;
+}
+
+#suporte input[type="submit"] {
+    width: 100px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+#suporte input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer p {
+    background-image: linear-gradient(rgb(40, 40, 40), rgb(50, 50, 50));
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 576px) {
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    #menu {
+        height: 30px;
+    }
+
+    #logo {
+        height: 30px;
+    }
+
+    #menu a {
+        font-size: 12px;
+        margin-left: 5px;
+        line-height: 30px;
+    }
+
+    #beneficios {
+        padding: 1rem 0;
+    }
+
+    #beneficios ul {
+        flex-direction: column;
+    }
+
+    #planos-detalhes {
+        flex-direction: column;
+    }
+
+    .plano,
+    .plano-recomendado {
+        max-width: 90%;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    #planos {
+        padding-bottom: 2rem;
+    }
+
+    #suporte input,
+    #suporte textarea {
+        width: 100%;
+        max-width: 80%;
+    }
+}
