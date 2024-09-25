@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Clone da página de venda do iPhone 16 Pro em 19/09/2024 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar iPhone 16 Pro e iPhone 16 Pro Max</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cellphone.css" media="screen and (max-width: 450px)">
+    <link rel="shortcut icon" href="img/icon-apple-white.png" type="image/x-icon">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="links-list">
+                <li><a href="#"><i class="fas fa-brands fa-apple"></i></a></li>
+                <li><a class="non-icon-link" href="#">Loja</a></li>
+                <li><a class="non-icon-link" href="#">Mac</a></li>
+                <li><a class="non-icon-link" href="#">iPad</a></li>
+                <li><a class="non-icon-link" href="#">iPhone</a></li>
+                <li><a class="non-icon-link" href="#">Watch</a></li>
+                <li><a class="non-icon-link" href="#">AirPods</a></li>
+                <li><a class="non-icon-link" href="#">TV e Casa</a></li>
+                <li><a class="non-icon-link" href="#">Entretenimento</a></li>
+                <li><a class="non-icon-link" href="#">Acessórios</a></li>
+                <li><a class="non-icon-link" href="#">Suporte</a></li>
+                <li><a href="#"><i class="fas fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><img id="icon" src="img/icon-bag.png" alt="Buy"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="main-header">
+            <div>
+                <span id="new">Novo</span>
+                <h1>iPhone 16 Pro</h1>
+                <p>Pré-venda em 24/09.</p>
+                <p id="price">A partir de R$ 10.499</p>
+            </div>
+            <div id="discount">
+                <p>Menos 10% à vista ou até 12x <i class="fas fa-solid fa-circle-plus"></i></p>
+            </div>
+        </div>
+        <div id="select-model">
+            <div id="image-side">
+                <img id="image" src="img/iphone16-pro-&-pro-max.webp" alt="iPhone 16 Pro e iPhone 16 Pro Max">
+            </div>
+            <div id="selections">
+                <h3><mark>Modelo. </mark>Qual é o melhor para você?</h3>
+                <button id="pro" class="model">
+                    <div>
+                        <h4>iPhone 16 Pro</h4>
+                        <p>Tela de 6,3 polegadas¹</p>
+                    </div>
+                    <div class="price-model">
+                        <p>A partir de R$ 10.499</p>
+                    </div>
+                </button>
+                <button id="pro-max" class="model">
+                    <div>
+                        <h4>iPhone 16 Pro Max</h4>
+                        <p>Tela de 6,9 polegadas¹</p>
+                    </div>
+                    <div class="price-model">
+                        <p>A partir de R$ 12.499</p>
+                    </div>
+                </button>
+                <div id="help-model">
+                    <div>
+                        <h5>Precisa de ajuda para escolher um modelo?</h5>
+                        <p>Veja as diferenças de tamanho da tela e duração da bateria.</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-solid fa-circle-plus"></i>
+                    </div>
+                </div>
+                <h3><mark>Cor. </mark>Escolha sua favorita.</h3>
+                <p id="color">Cor<span id="hover-color"></span></p>
+                <div id="color-picker">
+                    <ul>
+                        <li><div id="desert" class="color disable"></div></li>
+                        <li><div id="natural" class="color disable"></div></li>
+                        <li><div id="white" class="color disable"></div></li>
+                        <li><div id="black" class="color disable"></div></li>
+                    </ul>
+                </div>
+                <h3><mark>Armazenamento. </mark>De quanto espaço você precisa?</h3>
+                <div id="storage-options">
+                    <button id="storage128" class="storage disable">
+                        <div>
+                            <p><span><mark>128 </mark>GB²</span></p>
+                        </div>
+                        <div class="price-model">
+                            <p id="price128">A partir de R$ 10.499</p>
+                        </div>
+                    </button>
+                    <button id="storage256" class="storage disable">
+                        <div>
+                            <p><span><mark>256 </mark>GB²</span></p>
+                        </div>
+                        <div class="price-model">
+                            <p id="price256">A partir de R$ 11.299</p>
+                        </div>
+                    </button>
+                    <button id="storage512" class="storage disable">
+                        <div>
+                            <p><span><mark>512 </mark>GB²</span></p>
+                        </div>
+                        <div class="price-model">
+                            <p id="price512">A partir de R$ 12.799</p>
+                        </div>
+                    </button>
+                    <button id="storage1024" class="storage disable">
+                        <div>
+                            <p><span><mark>1 </mark>TB²</span></p>
+                        </div>
+                        <div class="price-model">
+                            <p id="price1024">A partir de R$ 14.299</p>
+                        </div>
+                    </button>
+                    <div id="help-storage" class="disable">
+                        <div>
+                            <h5>Está em dúvida sobre a capacidade de armazenamento?</h5>
+                            <p>Entenda melhor qual é o espaço de armazenamento mais adequado para você.</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

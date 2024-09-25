@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14%;
+    height: 44px;
+}
+
+#links-list li {
+    list-style: none;
+}
+
+#links-list li a .fas {
+    font-size: 1rem;
+}
+
+#links-list li a {
+    text-decoration: none;
+    font-size: 0.73rem;
+    color: #333;
+}
+
+#links-list li a:hover {
+    color: black;
+}
+
+#links-list li #icon {
+    height: 17px;
+}
+
+main {
+    padding: 0 6%;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 0 22px;
+}
+
+#new {
+    color: rgba(189, 54, 54, 0.87);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+h1 {
+    font-size: 2.9rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#main-header p {
+    color: #333;
+    line-height: 1.5rem;
+}
+
+#price {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#discount p {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    padding: 10px 16px;
+    margin: 6px 0;
+    border-radius: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#discount p:hover .fas,
+#help-model:hover .fas,
+#help-storage.able:hover .fas {
+    color: #1d1d1f9c;
+}
+
+#select-model {
+    padding: 40px 0;
+    display: flex;
+}
+
+#image-side {
+    background-color: #f5f5f7;
+    height: 460px;
+    width: 67%;
+    border-radius: 20px;
+    position: sticky;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#image-side #image {
+    width: 580px;
+    transition: 1s;
+}
+
+#selections {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 25px 0 0 60px;
+}
+
+#selections h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #86868b;
+    margin-bottom: 30px;
+}
+
+#selections mark {
+    color: #1d1d1f;
+    background-color: transparent;
+}
+
+#selections .model,
+#selections .storage {
+    border: 1px solid #86868b;
+    padding: 20px 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+}
+
+#selections .model h4 {
+    font-size: 1rem;
+    color: #1d1d1f;
+    margin-bottom: 7px;
+}
+
+#selections .model p,
+#selections .storage p {
+    color: #666;
+    font-size: 0.77rem;
+}
+
+#help-model,
+#help-storage {
+    margin-top: 20px;
+    background-color: #f5f5f7;
+    padding: 16px 12px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+#help-model h5,
+#help-model p,
+#help-storage h5,
+#help-storage p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.1rem;
+}
+
+#color {
+    font-weight: bold;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+}
+
+#color-picker ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+#color-picker ul button {
+    background-color: white;
+    border: none;
+}
+
+#color-picker .color {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.692);
+    cursor: pointer;
+}
+
+#color-picker .disable,
+#storage-options .storage.disable,
+#help-storage.disable {
+    opacity: .4;
+    cursor: default;
+}
+
+#color-picker #desert {
+    background-color: rgb(197, 162, 116);
+}
+
+#color-picker #natural {
+    background-color: rgb(201, 198, 198);
+}
+
+#color-picker #white {
+    background-color: rgb(240, 235, 235);
+}
+
+#color-picker #black {
+    background-color: #2c2c35;
+}
+
+#selections .storage {
+    padding: 30px 12px;
+}
+
+.storage mark {
+    font-size: medium;
+}
+
+.storage span {
+    font-size: small;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+/* Classes aplicadas por JS */
+#pro.selected,
+#pro-max.selected,
+#desert.selected,
+#natural.selected,
+#white.selected,
+#black.selected,
+#storage128.selected,
+#storage256.selected,
+#storage512.selected,
+#storage1024.selected {
+    border: 2px solid #0071e3;
+}
+
+#desert.selected,
+#natural.selected,
+#white.selected,
+#black.selected {
+    cursor: default;
+}
+
+#image-side.center {
+    align-items: center;
+}
+
+#image-side #image.pro.all-colors {
+    width: 440px;
+}
+
+#image-side #image.pro-max.all-colors {
+    width: 490px;
+}
+
+#image-side #image.pro {
+    width: 220px;
+}
+
+#image-side #image.pro-max {
+    width: 230px;
+}
+
+#storage128.hide {
+    display: none;
+}
