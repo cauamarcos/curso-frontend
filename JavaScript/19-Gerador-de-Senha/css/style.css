@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(blue, rgb(40, 40, 253), rgb(83, 83, 252), rgb(138, 138, 252), rgb(195, 195, 255));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+
+#container {
+    display: flex;
+    width: 70%;
+    min-height: 80vh;
+    margin: auto;
+    background-color: #fff;
+    height: max-content;
+    box-shadow: rgba(50, 50, 93, 0.7) 8px 16px 27px -5px;
+}
+
+#img-side {
+    width: 50%;
+    background-image: url(../img/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-layer {
+    background-color: rgba(106, 106, 236, 0.479);
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    padding: 0 25px;
+    word-spacing: 10rem;
+}
+
+#form-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.info-line {
+    color: #aaa;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input[type="submit"] {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(30, 190, 30);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 15px;
+    border: none;
+    align-self: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#help-generate-password {
+    font-weight: bold;
+    color: rgb(0, 63, 199);
+    cursor: pointer;
+}
+
+#help-generate-password:hover {
+    opacity: .8;
+}
+
+#generate-options {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#generate-options .info-line {
+    margin-bottom: 20px;
+}
+
+#generate-options input[type="text"] {
+    width: 30px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+    height: 35px;
+}
+
+#generate-options label,
+#generate-options input {
+    width: fit-content;
+}
+
+.form-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#generate-password {
+    background-color: rgb(0, 63, 199);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    align-self: center;
+}
+
+
+#generate-password:hover {
+    background-color: rgb(41, 104, 240);
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+#password-box {
+    border: 1px solid rgb(0, 63, 199);
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#password-box p {
+    color: rgb(30, 190, 30);
+    font-size: 0.85em;
+}
+
+#password-box #generated-password {
+    color: black;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+#copy-password {
+    background-color: white;
+    color: rgb(30, 190, 30);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 1px solid rgb(30, 190, 30);
+    align-self: center;
+}
+
+#copy-password:hover {
+    cursor: pointer;
+    background-color: rgb(30, 190, 30);
+    color: white;
+}
