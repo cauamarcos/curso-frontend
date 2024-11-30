@@ -1,0 +1,15 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    margin: 5px 0 10px;
+}

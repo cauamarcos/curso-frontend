@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+h1 {
+  color: rgb(14, 14, 182);
+}
+
+.title {
+  background-color: black;
+  color: white;
+}
