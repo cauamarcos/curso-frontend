@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
