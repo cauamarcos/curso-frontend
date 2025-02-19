@@ -1,0 +1,19 @@
+.welcome {
+    text-align: center;
+    width: 500px;
+}
+
+.welcome h2, .welcome p {
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    color: #8425de;
+}
+
+.welcome img {
+    display: flex;
+    width: 70%;
+    margin-top: 1rem;
+    justify-self: center;
+}

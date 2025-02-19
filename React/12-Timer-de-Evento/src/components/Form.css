@@ -1,0 +1,45 @@
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    padding: 0 10px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+input[type="color"] {
+    padding: 0;
+    /* evita de estragar o color picker */
+}
+
+button {
+    background-color: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: black;
+}

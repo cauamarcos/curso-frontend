@@ -1,0 +1,32 @@
+#category {
+    text-align: center;
+    width: 500px;
+}
+
+#category h2, #category p {
+    margin-bottom: 1rem;
+}
+
+#category p {
+    color: #8425de;
+}
+
+#category img {
+    display: flex;
+    width: 70%;
+    margin-top: 1rem;
+    justify-self: center;
+}
+
+#category #buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#category button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}

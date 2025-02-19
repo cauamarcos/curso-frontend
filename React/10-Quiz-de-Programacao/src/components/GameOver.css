@@ -1,0 +1,20 @@
+#gameover {
+    text-align: center;
+    width: 500px;
+}
+
+#gameover h2,
+#gameover p {
+    margin-bottom: 1rem;
+}
+
+#gameover p {
+    color: #8425de;
+}
+
+#gameover img {
+    display: flex;
+    width: 70%;
+    margin: 2rem 0;
+    justify-self: center;
+}

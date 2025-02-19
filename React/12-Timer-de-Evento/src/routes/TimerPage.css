@@ -1,0 +1,15 @@
+.timer-page {
+    text-align: center;
+}
+
+.timer-page h1 {
+    font-size: 2.4rem;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 2rem;
+}

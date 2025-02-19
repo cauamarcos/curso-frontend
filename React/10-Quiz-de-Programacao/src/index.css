@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+body,
+html {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #1c1c1c;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 150px;
+    height: 2.5rem;
+    background: linear-gradient(90deg, rgba(132, 53, 222, 1) 0%, rgba(184, 84, 232, 1) 100%);
+    border: none;
+    border-radius: 4rem;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(184, 84, 232, 1) 0%, rgba(132, 53, 222, 1) 100%);
+}
