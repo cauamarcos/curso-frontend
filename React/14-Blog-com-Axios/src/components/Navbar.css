@@ -1,0 +1,17 @@
+#navbar {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#links a:hover {
+    opacity: .8;
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Blinker";
+    color: white;
+}
+
+body {
+    background-color: #070707;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}

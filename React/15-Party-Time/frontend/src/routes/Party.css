@@ -1,0 +1,26 @@
+.party {
+    padding: 0 20px;
+}
+
+.party h1,
+.party h3,
+.party p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.party .actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.party .services-container .service {
+    min-width: 300px;
+}
+
+.party .services-container .service img {
+    min-height: 150px;
+}

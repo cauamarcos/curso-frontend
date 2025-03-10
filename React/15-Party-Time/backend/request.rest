@@ -1,0 +1,89 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/67bc7a3127f07a80f65477d9
+
+###
+DELETE http://localhost:3000/api/services/67bc7a3127f07a80f65477d9
+
+###
+PUT http://localhost:3000/api/services/67bcde8e7677b8e370f12b99
+Content-Type: application/json
+
+{
+    "name": "Teste atualização",
+    "description": "Alguma descrição",
+    "price": 1700,
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Minha festa",
+    "author": "Cauã",
+    "description": "Festa de formatura",
+    "budget": 6000,
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Cauã",
+    "description": "Resenha",
+    "budget": 6000,
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 5200,
+            "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww"
+        },
+        {
+            "name": "Outro serviço",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/67bcebb90b702a8a4eef7797
+
+###
+DELETE http://localhost:3000/api/parties/67bcec850b702a8a4eef7799
+
+###
+PUT http://localhost:3000/api/parties/67bcebb90b702a8a4eef7797
+Content-Type: application/json
+
+{
+    "title": "Nova festa",
+    "author": "Cauã",
+    "description": "Alguma descrição",
+    "budget": 10000,
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww",
+    "services": []
+}
