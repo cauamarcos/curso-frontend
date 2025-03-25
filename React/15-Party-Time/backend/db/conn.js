@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+require("dotenv").config();
+
 async function main() {
     try {
         await mongoose.connect(
@@ -8,7 +10,7 @@ async function main() {
 
         console.log("Conectado ao banco!");
     } catch (error) {
-        console.log(`Erro ${error}`);
+        console.log(`${error}`);
     }
 }
 
