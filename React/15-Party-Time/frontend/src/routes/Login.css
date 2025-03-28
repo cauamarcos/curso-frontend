@@ -1,0 +1,96 @@
+#container {
+    background: linear-gradient(rgb(169, 0, 247), rgb(176, 28, 245), rgb(192, 75, 247), rgb(212, 138, 247));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+
+#login {
+    display: flex;
+    width: 70%;
+    min-height: 80vh;
+    margin: auto;
+    background-color: #fff;
+    height: max-content;
+    box-shadow: rgba(50, 50, 93, 0.7) 8px 16px 27px -5px;
+}
+
+#title-side {
+    width: 50%;
+    background-color: #7703fc;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    padding: 0 25px;
+}
+
+#form-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#login h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#login label {
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+}
+
+#login input[type="text"],
+#login input[type="email"],
+#login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="submit"],
+button {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(30, 190, 30);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 120px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#cancel-btn {
+    background-color: red;
+}

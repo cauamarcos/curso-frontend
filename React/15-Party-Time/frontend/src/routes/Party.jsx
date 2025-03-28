@@ -3,11 +3,13 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 
 import partyFetch from "../axios/config";
 import useToast from "../hooks/useToast";
+import useUserContext from "../hooks/useUserContext";
 
 import "./Party.css";
 
 const Party = () => {
     const { id } = useParams();
+    const { user, setUser } = useUserContext();
 
     const [party, setParty] = useState(null);
 
@@ -15,7 +17,7 @@ const Party = () => {
 
     useEffect(() => {
         const loadParty = async () => {
-            const res = await partyFetch.get(`/parties/${id}`);
+            const res = await partyFetch.get(`/${user.email}/parties/${id}`);
 
             setParty(res.data);
         };
@@ -24,7 +26,7 @@ const Party = () => {
     }, []);
 
     const handleDelete = async () => {
-        const res = await partyFetch.delete(`/parties/${id}`);
+        const res = await partyFetch.delete(`/${user.email}/parties/${id}`);
 
         if (res.status === 200) {
             navigate("/");
@@ -38,7 +40,7 @@ const Party = () => {
         <div className="party">
             <h1>{party.title}</h1>
             <div className="actions-container">
-                <Link to={`/party/edit/${party._id}`} className="btn">
+                <Link to={`/${user.email}/party/edit/${party._id}`} className="btn">
                     Editar
                 </Link>
                 <button className="btn-secondary" onClick={handleDelete}>

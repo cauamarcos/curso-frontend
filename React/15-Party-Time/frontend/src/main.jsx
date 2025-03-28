@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { UserProvider } from "./context/UserContext";
 
 import App from "./App";
 import Home from "./routes/Home";
@@ -20,15 +21,15 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/party/new",
+                path: "/:email/party/new",
                 element: <CreateParty />,
             },
             {
-                path: "/party/:id",
+                path: "/:email/party/:id",
                 element: <Party />,
             },
             {
-                path: "/party/edit/:id",
+                path: "/:email/party/edit/:id",
                 element: <EditParty />,
             },
         ],
@@ -37,8 +38,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <RouterProvider router={router}>
-            <App />
-        </RouterProvider>
+        <UserProvider>
+            <RouterProvider router={router} />
+        </UserProvider>
     </StrictMode>
 );

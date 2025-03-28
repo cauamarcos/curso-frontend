@@ -5,7 +5,7 @@ const useToast = (msg, status = null) => {
         toast.success(msg, {
             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: true,
+            hideProgressBar: false,
             closeOnClick: true,
             theme: "light",
         });
@@ -13,7 +13,7 @@ const useToast = (msg, status = null) => {
         toast.error(msg, {
             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: true,
+            hideProgressBar: false,
             closeOnClick: true,
             theme: "light",
         });

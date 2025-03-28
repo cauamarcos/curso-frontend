@@ -2,16 +2,18 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import partyFetch from "../axios/config";
+import useUserContext from "../hooks/useUserContext";
 
 import "./Home.css";
 
 const Home = () => {
+    const { user, setUser } = useUserContext();
     const [parties, setParties] = useState(null);
 
     // carregando festas
     useEffect(() => {
         const loadParties = async () => {
-            const res = await partyFetch.get("/parties");
+            const res = await partyFetch.get(`/${user.email}/parties`);
 
             setParties(res.data);
         };
@@ -30,7 +32,7 @@ const Home = () => {
                     <div className="party" key={party._id}>
                         <img src={party.image} alt={party.title} />
                         <h3>{party.title}</h3>
-                        <Link to={`/party/${party._id}`} className="btn-secondary">
+                        <Link to={`/${user.email}/party/${party._id}`} className="btn-secondary">
                             Detalhes
                         </Link>
                     </div>

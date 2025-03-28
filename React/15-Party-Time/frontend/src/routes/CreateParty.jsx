@@ -1,12 +1,15 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import partyFetch from "../axios/config";
 import useToast from "../hooks/useToast";
+import useUserContext from "../hooks/useUserContext";
 
 import "./Form.css";
 
 const CreateParty = () => {
+    const { user, setUser } = useUserContext();
+
     const [services, setServices] = useState([]);
 
     const [title, setTitle] = useState("");
@@ -52,7 +55,7 @@ const CreateParty = () => {
                 services: partyServices,
             };
 
-            const res = await partyFetch.post("/parties", party);
+            const res = await partyFetch.put(`${user.email}/parties`, party);
 
             if (res.status === 201) navigate("/");
 

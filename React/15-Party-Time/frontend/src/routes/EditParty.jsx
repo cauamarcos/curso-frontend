@@ -3,11 +3,13 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import partyFetch from "../axios/config";
 import useToast from "../hooks/useToast";
+import useUserContext from "../hooks/useUserContext";
 
 import "./Form.css";
 
 const EditParty = () => {
     const { id } = useParams();
+    const { user, setUser } = useUserContext();
 
     const [party, setParty] = useState(null);
     const [services, setServices] = useState([]);
@@ -25,7 +27,7 @@ const EditParty = () => {
         };
 
         const loadParty = async () => {
-            const res = await partyFetch.get(`/parties/${id}`);
+            const res = await partyFetch.get(`/${user.email}/parties/${id}`);
 
             setParty(res.data);
         };
@@ -50,9 +52,9 @@ const EditParty = () => {
         e.preventDefault();
 
         try {
-            const res = await partyFetch.put(`/parties/${id}`, party);
+            const res = await partyFetch.put(`/${user.email}/parties/${id}`, party);
 
-            if (res.status === 200) navigate(`/party/${id}`);
+            if (res.status === 200) navigate(`/${user.email}/party/${id}`);
         } catch (error) {
             useToast(error.response.data.msg, "error");
         }
